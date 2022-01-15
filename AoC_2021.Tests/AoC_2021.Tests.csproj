@@ -39,7 +39,11 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="01\SonarSweepReportAnalyzerTests.cs" />
+    <Compile Include="01\ReportAnalyzerTests.cs" />
+    <Compile Include="02\NavigatorTests.cs" />
+    <Compile Include="03\DiagnosticDataAnalyzerTests.cs" />
+    <Compile Include="08\SevenSegmentAnalyzerTests.cs" />
+    <Compile Include="TestData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -51,7 +55,19 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="01\input.txt" />
+    <EmbeddedResource Include="01\input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="02\input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="03\input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="08\input.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
